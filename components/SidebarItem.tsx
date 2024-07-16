@@ -11,7 +11,7 @@ interface SidebarItemsProps {
 }
 
 const SidebarItem: React.FC<SidebarItemsProps> = ({
-  icon,
+  icon: Icon, //remap icon prop to be used as an element 
   label,
   active,
   href,
@@ -37,7 +37,9 @@ const SidebarItem: React.FC<SidebarItemsProps> = ({
       active && "text-white"
       )}
     >
-      Sidebar Item
+      <Icon size={26} />
+      <p className="truncate w-full">{label}
+      </p>
     </Link>
   );
 }
