@@ -1,17 +1,19 @@
 import ListItem from "@/components/ListItem"
-import Header from "@/components/header"
+import Header from "@/components/Header"
+
 
 export default function Home() {
   return (
-    <div className= "
-    bg-neutral-900
+  <div className = "
+ bg-neutral-900
     rounded-lg
     h-full
     w-full
     overflow-hidden
     overflow-y-hidden
-    "> 
-    <Header>
+    "
+    > 
+    <Header> 
       <div className="
       mb-2">
         <h1 className="
@@ -30,9 +32,10 @@ export default function Home() {
     mt-4">
 
       <ListItem 
-      image = "/images/logo-white.png" 
-      name = "Liked Songs"
-      />
+              image= "/images/heart.png"
+              name="Liked Songs" 
+              href="liked"   
+        />
       
     </div>
       </div>
