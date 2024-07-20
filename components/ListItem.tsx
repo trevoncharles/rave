@@ -23,8 +23,9 @@ const ListItem: React.FC<ListItemProps> = ({
     router.push(href);
   }
   return (
-    <button
-      className="
+    <button //group attribute becomes our parent element 
+    onClick={onClick} 
+    className="
       relative
       group
       flex
@@ -35,7 +36,6 @@ const ListItem: React.FC<ListItemProps> = ({
       bg-netural-100/10
       hover:bg-neutral-100/20
       transition
-
       pr-4">
       <div className="
         relative
